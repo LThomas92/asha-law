@@ -31,8 +31,20 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'asha-law' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			
-		</div><!-- .site-branding -->
+
 
 	</header><!-- #masthead -->
+
+  <div class="pattern">
+  <!-- You can copy-paste or generate these in a loop -->
+  <div class="heart big"></div>
+  <div class="heart small"></div>
+  <div class="heart big"></div>
+  <div class="heart small"></div>
+  <div class="heart big"></div>
+  <div class="heart small"></div>
+  <div class="heart big"></div>
+  <div class="heart small"></div>
+  <div class="heart big"></div>
+  <div class="heart small"></div>
+</div>

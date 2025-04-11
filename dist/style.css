@@ -48,17 +48,21 @@
   .c-single-quiz__container {
     background-color: #FDF6F0;
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
-    margin-top: 10rem;
-    padding: 1.5rem 2rem;
-    height: 45vh; }
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2.5rem 2rem; }
   .c-single-quiz form button[type="submit"] {
-    background-color: #9B8557;
+    background-color: #C76C8D;
     color: #fff;
     padding: 0.8rem 1.2rem;
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 3px; }
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-top: 3.5rem;
+    font-weight: 400; }
   .c-single-quiz__question {
     margin-bottom: 1.5rem;
     font-size: 2rem;
@@ -201,6 +205,64 @@
   opacity: 1;
   visibility: visible;
   z-index: 3000; }
+
+.pattern {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  /* or space-between / flex-start / space-evenly */
+  margin-top: 4.5rem; }
+
+.heart {
+  position: relative;
+  background: red;
+  transform: rotate(-45deg);
+  margin: 10px; }
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  background: red;
+  border-radius: 50%; }
+
+/* Big Heart */
+.heart.big {
+  width: 50px;
+  height: 50px; }
+
+.heart.big::before,
+.heart.big::after {
+  width: 50px;
+  height: 50px; }
+
+.heart.big::before {
+  top: -25px;
+  left: 0; }
+
+.heart.big::after {
+  top: 0;
+  left: 25px; }
+
+/* Small Heart */
+.heart.small {
+  width: 25px;
+  height: 25px; }
+
+.heart.small::before,
+.heart.small::after {
+  width: 25px;
+  height: 25px; }
+
+.heart.small::before {
+  top: -12.5px;
+  left: 0; }
+
+.heart.small::after {
+  top: 0;
+  left: 12.5px; }
 
 body {
   position: relative;

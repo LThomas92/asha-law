@@ -226,7 +226,6 @@ add_action('init', 'start_php_session', 1);
 // Show results
 if ($_GET['question'] === 'done') {
   echo '<div class="c-single-quiz__last-msg">';
-  echo '<h2 class="c-single-quiz__">Quiz Complete!</h2>';
   $answers = $_SESSION['quiz_answers'][$quiz_id] ?? [];
   $all_correct = true;
 
@@ -239,7 +238,7 @@ if ($_GET['question'] === 'done') {
           $all_correct = false;
       }
 
-      echo '<p class="c-single-quiz__last-msg-answer"><strong>Q' . ($index + 1) . ': ' . esc_html($q['question_text']) . '</strong><br>';
+      echo '<p class="c-single-quiz__last-msg-answer"><strong>Question ' . ($index + 1) . ': ' . esc_html($q['question_text']) . '</strong><br>';
       echo 'Your Answer: ' . esc_html($user_answer ?: 'No answer') . '<br>';
       echo 'Correct Answer: ' . esc_html($correct_answer) . '</p>';
   }
@@ -247,7 +246,7 @@ if ($_GET['question'] === 'done') {
   if ($all_correct) {
       echo '<p class="c-single-quiz__all-correct">🎉 Congratulations! You answered all questions correctly. Now just one last thing!</p>';
       echo '<button class="c-single-quiz__gf-btn">Open Me!</button>';
-	  echo '<a class="c-single-quiz__home-btn" href="' . home_url() . '">Back to the start</a>';
+	    echo '<a class="c-single-quiz__home-btn" href="' . home_url() . '">Back to the start</a>';
     }
 
   echo '</div>';
@@ -258,11 +257,11 @@ if ($_GET['question'] === 'done') {
     // Show current question
     if (isset($questions[$current - 1])) {
         $q = $questions[$current - 1];
-		echo '<div class="c-single-quiz__container">';
+		    echo '<div class="c-single-quiz__container">';
         echo '<form method="post">';
         echo '<h3 class="c-single-quiz__question">' . esc_html($q['question_text']) . '</h3>';
-		echo '<div class="dotted-line"></div>';
-		echo '<p class="c-single-quiz__question-desc">Choose your answer, then hit next.</p>';
+        echo '<div class="dotted-line"></div>';
+        echo '<p class="c-single-quiz__question-desc">Choose your answer, then select next.</p>';
 
         if (!empty($q['answers'])) { 
             echo '<ul class="c-single-quiz__answers">';
@@ -273,7 +272,7 @@ if ($_GET['question'] === 'done') {
             echo '</ul>';
         }
 
-        echo '<br><button type="submit">Next</button>';
+        echo '<button type="submit">Next</button>';
         echo '</form>';
 		echo '</div>';
     } else {
