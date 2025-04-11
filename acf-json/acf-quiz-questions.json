@@ -1,0 +1,92 @@
+{
+    "key": "group_66164f8054a8c",
+    "title": "Quiz Questions",
+    "fields": [
+        {
+            "key": "field_66164f8e01a8e",
+            "label": "Questions",
+            "name": "questions",
+            "type": "repeater",
+            "instructions": "Add each quiz question here.",
+            "required": 1,
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Question",
+            "sub_fields": [
+                {
+                    "key": "field_66164fbd01a8f",
+                    "label": "Question Text",
+                    "name": "question_text",
+                    "type": "text",
+                    "instructions": "Enter the quiz question.",
+                    "required": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_66164fd701a90",
+                    "label": "Answers",
+                    "name": "answers",
+                    "type": "repeater",
+                    "instructions": "List the possible answers.",
+                    "required": 1,
+                    "collapsed": "",
+                    "min": 2,
+                    "max": 6,
+                    "layout": "table",
+                    "button_label": "Add Answer",
+                    "sub_fields": [
+                        {
+                            "key": "field_66164ff401a91",
+                            "label": "Answer Text",
+                            "name": "answer_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6616500d01a92",
+                    "label": "Correct Answer",
+                    "name": "correct_answer",
+                    "type": "text",
+                    "instructions": "Must match exactly one of the answer options.",
+                    "required": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "quiz"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": ""
+}

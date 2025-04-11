@@ -1,0 +1,73 @@
+@import "globals/mixins";
+@import "globals/colors";
+@import "globals/variables";
+
+
+@import "pages/front-page";
+@import "cpts/quizzes";
+
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($cream, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    overflow: auto; /* Ensure no restriction on body overflow */
+    height: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $montserrat;
+  }
+
+  a, li, p, label {
+    font-family: $merriWeather;
+  }
+
+  a { 
+    text-decoration: none;
+  }
+
+  [aria-current="page"] {
+   
+}
+
+  ul {
+    list-style: none;
+}
+
+.content {
+    flex: 1;
+  }
+
+  $bezier: cubic-bezier(0.64, 0.04, 0.35, 1);
+  .to-reveal {
+    opacity: 0;
+    position: relative;
+    top: 20px;
+  }
+  
+  .revealed {
+    transition: 0.6s $bezier;
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }

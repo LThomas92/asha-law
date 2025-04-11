@@ -1,0 +1,23 @@
+.c-homepage {
+    @include container-margins;
+    &__main-content {
+        margin-top: 10rem;
+        text-align: center;
+    }
+    &__main-image {
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $brown;
+    }
+    &__btn {
+        background-color: $brown;
+        color: $white;
+        font-weight: 400;
+        padding: 1.2rem 1.8rem;
+        display: inline-block;
+        margin-top: 2.5rem;
+    }
+}

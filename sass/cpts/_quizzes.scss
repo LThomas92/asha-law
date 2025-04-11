@@ -1,0 +1,114 @@
+.c-single-quiz {
+  @include container-margins;
+  form {
+    margin-top: 10rem;
+    button[type="submit"] {
+      background-color: $brown;
+      color: $white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  &__question {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $brown;
+    text-align: center;
+  }
+  &__answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    margin-top: 2.5rem;
+    label {
+      background-color: $green;
+      color: $white;
+      padding: 1.2rem 1.8rem;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+&__last-msg {
+  margin-top: 10rem;
+}
+&__last-msg-answer {
+  margin-bottom: 2.5rem;
+}
+&__gf-btn {
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
+  font-family: $montserrat;
+  padding: 1.2rem 1.8rem;
+  background-color: $brown;
+  color: $white;
+  cursor: pointer;
+}
+}
+
+//Popup Modal
+
+.c-popup-modal {
+  background-color: $white;
+  max-width: 50%;
+  margin: 0 auto;
+  box-shadow: $box-shadow-light-black;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: 300ms;
+  z-index: -1;
+  border-radius: 3px;
+  @media only screen and (max-width: $tablet_max) {
+    max-width: 100%;
+    width: 90%;
+    flex-direction: column;
+  }
+  svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+      path {
+              fill: $white;
+      }
+  }
+  &__header {
+    background-color: $brown;
+    width: 100%;
+    height: 175px;
+    display: block;
+    padding: 3.5rem 2.5rem;
+  }
+  &__content {
+    color: $white;
+  }
+  
+}
+
+
+//Dark BG 
+.dark-bg {
+  transition: 300ms;
+  visibility: hidden;
+ }
+
+ .show-dark-bg {
+  background-color: rgba($black, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+ }

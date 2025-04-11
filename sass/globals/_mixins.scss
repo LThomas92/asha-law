@@ -1,0 +1,39 @@
+@mixin for-size($size) {
+    @if $size == mobile {
+      @media (max-width: $mobile_max) { @content; }
+    } @else if $size == tablet {
+      @media (min-width: $tablet_min) and (max-width: $tablet_max) { @content; }
+    } @else if $size == desktop {
+      @media (min-width: $desktop_min) { @content; }
+    } @else if $size == no-mobile {
+      @media (min-width: $tablet_min) { @content; }
+    } @else if $size == no-desktop {
+      @media (max-width: $tablet_max) { @content; }
+    } @else if $size == widescreen {
+      @media (min-width: $widescreen_min) { @content; }
+    }
+  }
+  
+  @mixin content-margins {
+    width: calc(100vw - calc(#{$content_desktop_margins} * 2));
+    max-width: $content_desktop_max_width;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @include for-size(widescreen) {
+      max-width: $content_widescreen_max_width;
+    } @include for-size(mobile) {
+      width: calc(100vw - calc(#{$content_mobile_margins} * 2));
+    }
+  }
+  
+  @mixin container-margins {
+    width: calc(100vw - calc(#{$container_desktop_margins} * 2));
+    max-width: $container_desktop_max_width;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @include for-size(widescreen) {
+      max-width: $container_widescreen_max_width;
+    } @include for-size(mobile) {
+      width: calc(100vw - calc(#{$container_mobile_margins} * 2));
+    }
+  }

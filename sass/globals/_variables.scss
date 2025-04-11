@@ -1,0 +1,47 @@
+$merriWeather: "Merriweather Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+
+/*
+ * Responsive Breakpoints
+ ***************************/
+ $mobile_max: 767px;
+ $tablet_min: 768px;
+ $tablet_max: 1024px;
+ $desktop_min: 1025px;
+ $desktop_max: 1439px;
+ $widescreen_min: 1440px;
+
+/*
+  * Margins / Max Widths
+  ***************************/
+  $container_mobile_margins: 16px;
+  $container_desktop_margins: 16px;
+  $container_desktop_max_width: 959px;
+  $container_widescreen_margins: 16px;
+  $container_widescreen_max_width: 1200px;
+  
+  $content_mobile_margins: 32px;
+  $content_desktop_margins: 32px;
+  $content_desktop_max_width: 620px;
+  $content_widescreen_margins: 32px;
+  $content_widescreen_max_width: 750px;
+
+    //Box Shadow 
+  $box-shadow-light-black: 0px -25px 20px -20px rgba(0,0,0,0.2),
+  25px 0px 20px -20px rgba(0,0,0,0.2),
+  0px 25px 20px -20px rgba(0,0,0,0.2),
+  -25px 0px 20px -20px rgba(0,0,0,0.2);
+
+  $box-shadow-light-black--2: 0px -25px 20px -20px rgba(0,0,0,0.15),
+  25px 0px 20px -20px rgba(0,0,0,0.15),
+  0px 25px 20px -20px rgba(0,0,0,0.15),
+  -25px 0px 20px -20px rgba(0,0,0,0.15);
+
+  $box-shadow-light-black--3: 0px 0px 34px 1px rgba(0,0,0,0.75);
+
+  $box-shadow-bottom-only-black: 0 4px 2px -2px rgba($black, 0.75);
+
+  $box-shadow-white: 0px -25px 20px -20px $white,
+  25px 0px 20px -20px $white,
+  0px 25px 20px -20px $white,
+  -25px 0px 20px -20px $white;
