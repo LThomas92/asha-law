@@ -24,7 +24,11 @@
             {
                 "param": "page",
                 "operator": "==",
+<<<<<<< HEAD
                 "value": "14"
+=======
+                "value": "8"
+>>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
             }
         ]
     ],
@@ -37,5 +41,9 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
+<<<<<<< HEAD
     "modified": 1744327806
+=======
+    "modified": 1744306034
+>>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
 }

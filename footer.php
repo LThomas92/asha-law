@@ -18,12 +18,15 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<<<<<<< HEAD
 <div class="c-popup-modal"> 
   <div class="c-popup-modal__header">
     <h3 class="c-popup-modal__title">Will you be my girlfriend?</h3>
   </div>
 </div>
 
+=======
+>>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
 <?php wp_footer(); ?>
 
 </body>

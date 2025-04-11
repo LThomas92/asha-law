@@ -1,0 +1,25 @@
+.c-first-clue {
+    @include container-margins;
+    &__main-content {
+        margin-top: 10rem;
+        text-align: center;
+    }
+    &__title {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $brown;
+        margin-bottom: 3rem;
+    }
+    &__answer {
+        background-color: $green;
+        color: $white;
+        padding: 1.2rem 1.5rem;
+        display: inline-block;
+        cursor: pointer;
+    }
+    &__answers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+}
