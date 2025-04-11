@@ -1,0 +1,19 @@
+.overlay-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease-in;
+  }
+  
+  .show-overlay-menu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3000;
+  }

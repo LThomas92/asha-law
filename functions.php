@@ -223,7 +223,6 @@ add_action('init', 'start_php_session', 1);
 
     ob_start();
 
-<<<<<<< HEAD
 // Show results
 if ($_GET['question'] === 'done') {
   echo '<div class="c-single-quiz__last-msg">';
@@ -248,6 +247,7 @@ if ($_GET['question'] === 'done') {
   if ($all_correct) {
       echo '<p class="c-single-quiz__all-correct">🎉 Congratulations! You answered all questions correctly. Now just one last thing!</p>';
       echo '<button class="c-single-quiz__gf-btn">Open Me!</button>';
+	  echo '<a class="c-single-quiz__home-btn" href="' . home_url() . '">Back to the start</a>';
     }
 
   echo '</div>';
@@ -255,27 +255,14 @@ if ($_GET['question'] === 'done') {
   return ob_get_clean();
 }
 
-=======
-    // Show results
-    if ($_GET['question'] === 'done') {
-        echo '<h2>Quiz Complete!</h2>';
-        $answers = $_SESSION['quiz_answers'][$quiz_id] ?? [];
-        foreach ($questions as $index => $q) {
-            echo '<p><strong>Q' . ($index + 1) . ': ' . esc_html($q['question_text']) . '</strong><br>';
-            echo 'Your Answer: ' . esc_html($answers[$index + 1] ?? 'No answer') . '<br>';
-            echo 'Correct Answer: ' . esc_html($q['correct_answer']) . '</p>';
-        }
-        session_destroy(); // Optional: clear answers after showing
-        return ob_get_clean();
-    }
-
->>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
     // Show current question
     if (isset($questions[$current - 1])) {
         $q = $questions[$current - 1];
+		echo '<div class="c-single-quiz__container">';
         echo '<form method="post">';
-<<<<<<< HEAD
         echo '<h3 class="c-single-quiz__question">' . esc_html($q['question_text']) . '</h3>';
+		echo '<div class="dotted-line"></div>';
+		echo '<p class="c-single-quiz__question-desc">Choose your answer, then hit next.</p>';
 
         if (!empty($q['answers'])) { 
             echo '<ul class="c-single-quiz__answers">';
@@ -284,20 +271,11 @@ if ($_GET['question'] === 'done') {
                 echo "<label><input type='radio' name='answer' value='$value' required> $value</label>";
             }
             echo '</ul>';
-=======
-        echo '<p><strong>Question ' . $current . ' of ' . $total . '</strong></p>';
-        echo '<p>' . esc_html($q['question_text']) . '</p>';
-
-        if (!empty($q['answers'])) {
-            foreach ($q['answers'] as $a) {
-                $value = esc_attr($a['answer_text']);
-                echo "<label><input type='radio' name='answer' value='$value' required> $value</label><br>";
-            }
->>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
         }
 
         echo '<br><button type="submit">Next</button>';
         echo '</form>';
+		echo '</div>';
     } else {
         echo '<p>Invalid question number.</p>';
     }

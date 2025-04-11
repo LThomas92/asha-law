@@ -6,12 +6,14 @@
 @import "pages/front-page";
 @import "cpts/quizzes";
 
+@import "footer";
+
 
 body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: rgba($cream, 0.3);
+    // background-color: rgba($cream, 0.3);
 }
 
 * {
@@ -38,11 +40,7 @@ body {
     font-family: $montserrat;
   }
 
-<<<<<<< HEAD
   a, li, p, label {
-=======
-  a, li, p {
->>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
     font-family: $merriWeather;
   }
 
@@ -75,3 +73,20 @@ body {
     position: relative;
     top: 0;
   }
+
+
+  .dark-bg {
+    transition: 300ms;
+    visibility: hidden;
+   }
+
+  .show-dark-bg {
+    background-color: rgba($black, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+   }

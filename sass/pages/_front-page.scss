@@ -9,15 +9,17 @@
     }
     &__title {
         font-size: 3rem;
+        font-family: $shadowLight;
         font-weight: 500;
         color: $brown;
     }
     &__btn {
-        background-color: $brown;
+        background-color: $red;
         color: $white;
         font-weight: 400;
         padding: 1.2rem 1.8rem;
         display: inline-block;
         margin-top: 2.5rem;
+        border-radius: 3px;
     }
 }

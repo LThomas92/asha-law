@@ -22,46 +22,49 @@
     margin: 0 auto; }
   .c-homepage__title {
     font-size: 3rem;
+    font-family: "Shadows Into Light", cursive;
     font-weight: 500;
-    color: #6B4F3B; }
+    color: #6B4C3B; }
   .c-homepage__btn {
-    background-color: #6B4F3B;
+    background-color: #E60000;
     color: #fff;
     font-weight: 400;
     padding: 1.2rem 1.8rem;
     display: inline-block;
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem;
+    border-radius: 3px; }
 
-<<<<<<< HEAD
 .c-single-quiz {
-=======
-.c-first-clue {
->>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
   width: calc(100vw - calc(16px * 2));
   max-width: 959px;
   margin-left: auto !important;
   margin-right: auto !important; }
   @media (min-width: 1440px) {
-<<<<<<< HEAD
     .c-single-quiz {
       max-width: 1200px; } }
   @media (max-width: 767px) {
     .c-single-quiz {
       width: calc(100vw - calc(16px * 2)); } }
-  .c-single-quiz form {
-    margin-top: 10rem; }
-    .c-single-quiz form button[type="submit"] {
-      background-color: #6B4F3B;
-      color: #fff;
-      padding: 0.8rem 1.2rem;
-      border: none;
-      outline: none;
-      cursor: pointer; }
+  .c-single-quiz__container {
+    background-color: #FDF6F0;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
+    margin-top: 10rem;
+    padding: 1.5rem 2rem;
+    height: 45vh; }
+  .c-single-quiz form button[type="submit"] {
+    background-color: #9B8557;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px; }
   .c-single-quiz__question {
     margin-bottom: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: "Shadows Into Light", cursive;
     font-weight: 500;
-    color: #6B4F3B;
+    color: #9B8557;
     text-align: center; }
   .c-single-quiz__answers {
     display: grid;
@@ -69,13 +72,17 @@
     grid-gap: 1.5rem;
     margin-top: 2.5rem; }
     .c-single-quiz__answers label {
-      background-color: #A2B38B;
-      color: #fff;
+      border: 2px solid #C76C8D;
+      color: #000;
       padding: 1.2rem 1.8rem;
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 300ms ease-in; }
+      .c-single-quiz__answers label:hover {
+        background-color: #C76C8D;
+        color: #fff; }
   .c-single-quiz__last-msg {
-    margin-top: 10rem; }
+    margin: 10rem auto; }
   .c-single-quiz__last-msg-answer {
     margin-bottom: 2.5rem; }
   .c-single-quiz__gf-btn {
@@ -84,22 +91,29 @@
     outline: none;
     font-family: "Montserrat", sans-serif;
     padding: 1.2rem 1.8rem;
-    background-color: #6B4F3B;
+    background-color: #6B4C3B;
     color: #fff;
     cursor: pointer; }
+  .c-single-quiz__question-desc {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 2rem; }
 
 .c-popup-modal {
   background-color: #fff;
   max-width: 50%;
+  width: 100%;
+  height: 50vh;
   margin: 0 auto;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: -25%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 50%);
+  z-index: -1;
   opacity: 0;
   transition: 300ms;
-  z-index: -1;
   border-radius: 3px; }
   @media only screen and (max-width: 1024px) {
     .c-popup-modal {
@@ -118,12 +132,36 @@
     .c-popup-modal svg path {
       fill: #fff; }
   .c-popup-modal__header {
-    background-color: #6B4F3B;
+    background-color: #6B4C3B;
     width: 100%;
-    height: 175px;
+    height: 50px;
     display: block;
-    padding: 3.5rem 2.5rem; }
+    padding: 0.8rem 0; }
+  .c-popup-modal__title {
+    color: #fff;
+    text-align: center; }
   .c-popup-modal__content {
+    color: #fff; }
+  .c-popup-modal__active {
+    opacity: 1;
+    z-index: 10000; }
+  .c-popup-modal .gfield_label {
+    display: none !important; }
+  .c-popup-modal .gfield_radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 1rem; }
+  .c-popup-modal .ginput_container_radio {
+    margin-top: 1rem; }
+  .c-popup-modal__form {
+    padding: 2rem 3rem; }
+  .c-popup-modal #gform_submit_button_1 {
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: #6B4C3B;
     color: #fff; }
 
 .dark-bg {
@@ -139,37 +177,35 @@
   width: 100%;
   height: 100%;
   visibility: visible; }
-=======
-    .c-first-clue {
-      max-width: 1200px; } }
-  @media (max-width: 767px) {
-    .c-first-clue {
-      width: calc(100vw - calc(16px * 2)); } }
-  .c-first-clue__main-content {
-    margin-top: 10rem;
-    text-align: center; }
-  .c-first-clue__title {
-    font-size: 3rem;
-    font-weight: 500;
-    color: #6B4F3B;
-    margin-bottom: 3rem; }
-  .c-first-clue__answer {
-    background-color: #A2B38B;
-    color: #fff;
-    padding: 1.2rem 1.5rem;
-    display: inline-block;
-    cursor: pointer; }
-  .c-first-clue__answers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem; }
->>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
+
+.dotted-line {
+  width: 100%;
+  height: 4px;
+  /* Adjust height as needed */
+  background: repeating-linear-gradient(to right, black 0 4px, transparent 4px 30px); }
+
+.overlay-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms ease-in; }
+
+.show-overlay-menu {
+  opacity: 1;
+  visibility: visible;
+  z-index: 3000; }
 
 body {
   position: relative;
   display: flex;
-  flex-direction: column;
-  background-color: rgba(240, 224, 214, 0.3); }
+  flex-direction: column; }
 
 * {
   margin: 0;
@@ -191,11 +227,7 @@ figure {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
-<<<<<<< HEAD
 a, li, p, label {
-=======
-a, li, p {
->>>>>>> 1ed9049009da8716cbc6c66b775371a2cee7e3f5
   font-family: "Merriweather Sans", sans-serif; }
 
 a {
@@ -217,5 +249,19 @@ ul {
   opacity: 1;
   position: relative;
   top: 0; }
+
+.dark-bg {
+  transition: 300ms;
+  visibility: hidden; }
+
+.show-dark-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  visibility: visible; }
 
 /*# sourceMappingURL=style.css.map*/

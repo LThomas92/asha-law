@@ -11,8 +11,10 @@ $( document ).ready(function() {
       console.log('does this work');
     });
 
-    $(".close-icon").click(function () {
-      $(".overlay-menu").removeClass("show-overlay-menu");
+    $(".close-icon").click(function() {
+      $('.dark-bg').removeClass('show-dark-bg');
+      $('.c-popup-modal').removeClass('c-popup-modal__active');;
+      console.log('CLOSE WORKS');
     });
 
     if ( jQuery(".gutenberg-styles > *").length &&
