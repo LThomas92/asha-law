@@ -30,22 +30,42 @@
     color: $gold;
     text-align: center;
   }
+  .quiz-answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
   &__answers {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
     margin-top: 2.5rem;
+    input[type="radio"] {
+      display: none;
+    }
     label {
       border: 2px solid $pink;
       color: $black;
-      padding: 1.2rem 1.8rem;
       text-align: center;
       cursor: pointer;
       transition: all 300ms ease-in;
+      display: inline-block;
       &:hover {
         background-color: $pink;
         color: $white;
       }
+      span {
+        padding: 1.2rem 1.8rem;
+      }
+    }
+    input[type="radio"]:checked + span {
+      background-color: $pink;
+      color: $white;
+      display: block;
+      width: 100%;
+      border: 2px solid $pink;
+      padding: 1.2rem 1.8rem;
     }
   }
 &__last-msg {
@@ -54,6 +74,13 @@
 }
 &__last-msg-answer {
   margin-bottom: 2.5rem;
+  strong {
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 1.4rem;
+    color: $gold;
+    font-weight: 300;
+  }
 }
 &__gf-btn {
   margin-top: 1.5rem;

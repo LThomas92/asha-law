@@ -238,7 +238,7 @@ if ($_GET['question'] === 'done') {
           $all_correct = false;
       }
 
-      echo '<p class="c-single-quiz__last-msg-answer"><strong>Question ' . ($index + 1) . ': ' . esc_html($q['question_text']) . '</strong><br>';
+      echo '<p class="c-single-quiz__last-msg-answer"><strong>Question ' . ($index + 1) . ': ' . esc_html($q['question_text']) . '</strong>';
       echo 'Your Answer: ' . esc_html($user_answer ?: 'No answer') . '<br>';
       echo 'Correct Answer: ' . esc_html($correct_answer) . '</p>';
   }
@@ -266,9 +266,9 @@ if ($_GET['question'] === 'done') {
         if (!empty($q['answers'])) { 
             echo '<ul class="c-single-quiz__answers">';
             foreach ($q['answers'] as $a) {
-                $value = esc_attr($a['answer_text']);
-                echo "<label><input type='radio' name='answer' value='$value' required> $value</label>";
-            }
+              $value = esc_attr($a['answer_text']);
+              echo "<li><label class='quiz-answer'><input type='radio' name='answer' value='$value' required> <span>$value</span></label></li>";
+          }          
             echo '</ul>';
         }
 
