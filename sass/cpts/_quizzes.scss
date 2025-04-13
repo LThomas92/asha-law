@@ -125,7 +125,7 @@
   margin: 0 auto;
   box-shadow: $box-shadow-light-black;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: -1;
@@ -194,6 +194,15 @@
     font-family: $montserrat;
     background-color: $brown;
     color: $white;
+    cursor: pointer;
+  }
+  .gform_confirmation_message_1 {
+    strong {
+      font-family: $montserrat;
+    }
+    ol li {
+      font-size: 0.85rem;
+    }
   }
 }
 

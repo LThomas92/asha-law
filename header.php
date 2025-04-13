@@ -14,6 +14,7 @@
 <html <?php language_attributes(); ?>>
 <div class="dark-bg"></div>
 <head>
+  <title>Asha & Law's Journey</title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">

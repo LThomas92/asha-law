@@ -16,10 +16,11 @@
     .c-homepage {
       width: calc(100vw - calc(16px * 2)); } }
   .c-homepage__main-content {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     text-align: center; }
   .c-homepage__main-image {
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 10rem; }
   .c-homepage__title {
     font-size: 3rem;
     font-family: "Shadows Into Light", cursive;
@@ -148,7 +149,7 @@
   margin: 0 auto;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: -1;
@@ -204,7 +205,12 @@
     padding: 0.8rem 1.2rem;
     font-family: "Montserrat", sans-serif;
     background-color: #6B4C3B;
-    color: #fff; }
+    color: #fff;
+    cursor: pointer; }
+  .c-popup-modal .gform_confirmation_message_1 strong {
+    font-family: "Montserrat", sans-serif; }
+  .c-popup-modal .gform_confirmation_message_1 ol li {
+    font-size: 0.85rem; }
 
 .dark-bg {
   transition: 300ms;
@@ -251,7 +257,7 @@
   padding: 20px;
   justify-content: center;
   /* or space-between / flex-start / space-evenly */
-  margin-top: 4.5rem; }
+  margin-top: 2.5rem; }
 
 .heart {
   position: relative;

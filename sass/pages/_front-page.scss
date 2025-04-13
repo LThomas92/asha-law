@@ -1,11 +1,12 @@
 .c-homepage {
     @include container-margins;
     &__main-content {
-        margin-top: 5rem;
+        margin-top: 2.5rem;
         text-align: center;
     }
     &__main-image {
         margin: 0 auto;
+        height: 10rem;
     }
     &__title {
         font-size: 3rem;
