@@ -69,8 +69,13 @@
     }
   }
 &__last-msg {
-  margin: 10rem auto;
-
+  margin: 5rem auto;
+  text-align: center;
+  &__title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  }
 }
 &__last-msg-answer {
   margin-bottom: 2.5rem;
@@ -98,6 +103,18 @@
   font-weight: 300;
   margin-top: 2rem;
 }
+&__all-correct {
+  margin-bottom: 2.5rem;
+  color: $gold;
+  font-style: italic;
+}
+&__home-btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  margin-left: 1.5rem;
+  border: 2.5px solid $pink;
+  color: $pink;
+} 
 }
 
 //Popup Modal
@@ -105,11 +122,10 @@
   background-color: $white;
   max-width: 50%;
   width: 100%;
-  height: 50vh;
   margin: 0 auto;
   box-shadow: $box-shadow-light-black;
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: -1;
@@ -167,6 +183,9 @@
   }
   &__form {
     padding: 2rem 3rem;
+  }
+  .gform_title {
+    display: none !important;
   }
   #gform_submit_button_1 {
     border: none;

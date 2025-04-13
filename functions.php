@@ -226,6 +226,7 @@ add_action('init', 'start_php_session', 1);
 // Show results
 if ($_GET['question'] === 'done') {
   echo '<div class="c-single-quiz__last-msg">';
+  echo '<h3 class="c-single-quiz__last-msg__title">Here are your results!</h3>';
   $answers = $_SESSION['quiz_answers'][$quiz_id] ?? [];
   $all_correct = true;
 
