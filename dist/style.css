@@ -35,6 +35,53 @@
     margin-top: 2.5rem;
     border-radius: 3px; }
 
+.c-page-girlfriend-duties-list {
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-girlfriend-duties-list {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-girlfriend-duties-list {
+      width: calc(100vw - calc(16px * 2)); } }
+  .c-page-girlfriend-duties-list__title {
+    margin-top: 4.5rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #E60000;
+    position: relative; }
+    .c-page-girlfriend-duties-list__title::before {
+      content: '';
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHdpZHRoPSIyNTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDIuODEgMCAwIDIuODEgMS40MDY1OTMgMS40MDY1OTMpIj48cGF0aCBkPSJtMzcuNzEyIDQxLjU0MWMtMi40MzctMTAuMTQgMi45MTktMTkuNjA5IDguNzcyLTI1LjEzNy02LjIyMSAxMS41NC03LjQxIDIwLjEwNC0zLjQ2MSAzMy4xNzdsMi4yOS0uODU0Yy0uODgyLTIuNDY0LTEuNDEzLTQuODczLTEuNjg1LTcuMjQxIDguMjMtMi4zNTUgMTMuODgzLTcuMjA5IDE1LjIzMS0xNS45MjYuOTM3LTExLjkwOS02LjgxNy0xOC44NC0xNS4xNDEtMjUuNDQzIDMuMDQgOS43NTgtMTEuNTgxIDE3Ljk2NC0xMC4yOTYgMzAuOTQ5LjI3MSAyLjc0MS42OTcgNS4zMyAxLjMyNiA3LjgyNSIgZmlsbD0iIzdmYjI0MSIvPjxwYXRoIGQ9Im0zNC4wNjkgMzAuOTk5Yy45MTctMTIuOTIzIDEzLjU5OS0yMS4wOTggOS42NDktMzAuODgzIDEuMzk0IDguMjE2LTkuNzcxIDEyLjM4LTEyLjY2MyAyMi4xOTUtMS41NzUgNS44MzYtMS4xNTEgMTEuNDUyIDMuNjkzIDE2LjU3OS0uNjI5LTIuNDk0LS44MTEtNS4xMzktLjY3OS03Ljg5MXoiIGZpbGw9IiM3MTljNDAiLz48cGF0aCBkPSJtNjguNzcgNjEuMDkgMS42OS0xMy40OGgtMjYuNzctMjQuMTVsMS42OSAxMy40OHoiIGZpbGw9IiNhMDdlNjMiLz48cGF0aCBkPSJtNjMuMTEgNjEuMDktMy42MSAyOC45MWgtMTUuNDktMTMuNTFsLTMuNjEtMjguOTEiIGZpbGw9IiNhMDdlNjMiLz48cGF0aCBkPSJtNjIuNjEgNjUuMDkuNS00aC0zNi4yMmwuNSA0eiIgZmlsbD0iIzkxNmI0ZCIvPjwvZz48L3N2Zz4=);
+      background-position: center center;
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .c-page-girlfriend-duties-list__title::after {
+      content: '';
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHdpZHRoPSIyNTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDIuODEgMCAwIDIuODEgMS40MDY1OTMgMS40MDY1OTMpIj48cGF0aCBkPSJtMzcuNzEyIDQxLjU0MWMtMi40MzctMTAuMTQgMi45MTktMTkuNjA5IDguNzcyLTI1LjEzNy02LjIyMSAxMS41NC03LjQxIDIwLjEwNC0zLjQ2MSAzMy4xNzdsMi4yOS0uODU0Yy0uODgyLTIuNDY0LTEuNDEzLTQuODczLTEuNjg1LTcuMjQxIDguMjMtMi4zNTUgMTMuODgzLTcuMjA5IDE1LjIzMS0xNS45MjYuOTM3LTExLjkwOS02LjgxNy0xOC44NC0xNS4xNDEtMjUuNDQzIDMuMDQgOS43NTgtMTEuNTgxIDE3Ljk2NC0xMC4yOTYgMzAuOTQ5LjI3MSAyLjc0MS42OTcgNS4zMyAxLjMyNiA3LjgyNSIgZmlsbD0iIzdmYjI0MSIvPjxwYXRoIGQ9Im0zNC4wNjkgMzAuOTk5Yy45MTctMTIuOTIzIDEzLjU5OS0yMS4wOTggOS42NDktMzAuODgzIDEuMzk0IDguMjE2LTkuNzcxIDEyLjM4LTEyLjY2MyAyMi4xOTUtMS41NzUgNS44MzYtMS4xNTEgMTEuNDUyIDMuNjkzIDE2LjU3OS0uNjI5LTIuNDk0LS44MTEtNS4xMzktLjY3OS03Ljg5MXoiIGZpbGw9IiM3MTljNDAiLz48cGF0aCBkPSJtNjguNzcgNjEuMDkgMS42OS0xMy40OGgtMjYuNzctMjQuMTVsMS42OSAxMy40OHoiIGZpbGw9IiNhMDdlNjMiLz48cGF0aCBkPSJtNjMuMTEgNjEuMDktMy42MSAyOC45MWgtMTUuNDktMTMuNTFsLTMuNjEtMjguOTEiIGZpbGw9IiNhMDdlNjMiLz48cGF0aCBkPSJtNjIuNjEgNjUuMDkuNS00aC0zNi4yMmwuNSA0eiIgZmlsbD0iIzkxNmI0ZCIvPjwvZz48L3N2Zz4=);
+      background-position: center center;
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .c-page-girlfriend-duties-list .wp-block-list {
+    margin-top: 3.5rem; }
+    .c-page-girlfriend-duties-list .wp-block-list li {
+      margin-bottom: 1.5rem; }
+
 .c-single-quiz {
   width: calc(100vw - calc(16px * 2));
   max-width: 959px;
@@ -149,7 +196,7 @@
   margin: 0 auto;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: -1;

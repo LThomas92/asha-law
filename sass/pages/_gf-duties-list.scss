@@ -1,0 +1,43 @@
+.c-page-girlfriend-duties-list {
+  @include container-margins;
+  &__title {
+    margin-top: 4.5rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: $red;
+    position: relative;
+    &::before {
+      content: '';
+      background-image: url('../img/plant.svg');
+      background-position: center center;
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      content: '';
+      background-image: url('../img/plant.svg');
+      background-position: center center;
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .wp-block-list {
+    margin-top: 3.5rem;
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
