@@ -17,6 +17,15 @@
   <title>Asha & Law's Journey</title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asha & Law's Journey</title>
+<meta name="description" content="Asha & Law's Journey!">
+<meta name="keywords" content="asha, lawrence">
+<meta name="author" content="Lawrence">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lawrencet13.sg-host.com">
+<meta property="og:title" content="Asha & Law's Journey!">
+<meta property="og:description" content="A propsoal for Asha to be my girlfriend">
+<meta property="og:image" content="http://lawrencet13.sg-host.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-22-2025-07_43_20-PM.png">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
