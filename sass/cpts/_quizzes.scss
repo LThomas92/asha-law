@@ -41,6 +41,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
     margin-top: 2.5rem;
+    @media only screen and (max-width: $tablet_max) {
+      grid-template-columns: 1fr;
+    }
     input[type="radio"] {
       display: none;
     }

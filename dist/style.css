@@ -15,6 +15,9 @@
   @media (max-width: 767px) {
     .c-homepage {
       width: calc(100vw - calc(16px * 2)); } }
+  @media only screen and (max-width: 1024px) {
+    .c-homepage {
+      margin-bottom: 4.5rem; } }
   .c-homepage__main-content {
     margin-top: 2.5rem;
     text-align: center; }
@@ -128,6 +131,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.5rem;
     margin-top: 2.5rem; }
+    @media only screen and (max-width: 1024px) {
+      .c-single-quiz__answers {
+        grid-template-columns: 1fr; } }
     .c-single-quiz__answers input[type="radio"] {
       display: none; }
     .c-single-quiz__answers label {
