@@ -214,6 +214,9 @@
       max-width: 100%;
       width: 90%;
       flex-direction: column; } }
+  @media only screen and (max-width: 767px) {
+    .c-popup-modal {
+      top: 80%; } }
   .c-popup-modal svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -240,12 +243,16 @@
     opacity: 1;
     z-index: 10000; }
   .c-popup-modal .gfield_label {
-    display: none !important; }
+    display: none !important;
+    font-family: "Merriweather Sans", sans-serif !important; }
   .c-popup-modal .gfield_radio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 1024px) {
+      .c-popup-modal .gfield_radio {
+        grid-template-columns: 1fr; } }
   .c-popup-modal .ginput_container_radio {
     margin-top: 1rem; }
   .c-popup-modal__form {
