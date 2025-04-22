@@ -1,5 +1,8 @@
 .c-homepage {
     @include container-margins;
+    @media only screen and (max-width: $tablet_max) {
+       margin-bottom: 4.5rem;
+      }
     &__main-content {
         margin-top: 2.5rem;
         text-align: center;
