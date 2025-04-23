@@ -40,4 +40,10 @@
       margin-bottom: 1.5rem;
     }
   }
+  &__content {
+    @media only screen and (max-width: $tablet_max) {
+      margin-left: 3rem;
+      margin-right: 3rem;
+     }
+  }
 }
